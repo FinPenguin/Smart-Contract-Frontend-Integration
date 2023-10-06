@@ -51,7 +51,7 @@ const aboutus = () => {
           <div className={Style.aboutus_box_hero_left}>
             <h1>👋 About Us.</h1>
             <p>
-              We’re impartial and independent, and every day we create
+              We're impartial and independent, and every day we create
               distinctive, world-class programmes and content which inform,
               educate and entertain millions of people in the around the world.
             </p>
@@ -64,7 +64,7 @@ const aboutus = () => {
         <div className={Style.aboutus_box_title}>
           <h2>⛱ Founder</h2>
           <p>
-            We’re impartial and independent, and every day we create
+            We're impartial and independent, and every day we create
             distinctive, world-class programmes and content
           </p>
         </div>
@@ -90,7 +90,7 @@ const aboutus = () => {
         <div className={Style.aboutus_box_title}>
           <h2>🚀 Fast Facts</h2>
           <p>
-            We’re impartial and independent, and every day we create
+            We're impartial and independent, and every day we create
             distinctive, world-class programmes and content
           </p>
         </div>

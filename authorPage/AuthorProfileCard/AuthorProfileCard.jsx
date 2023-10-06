@@ -124,7 +124,7 @@ const AuthorProfileCard = () => {
                   <TiSocialInstagram />
                 </span>{" "}
                 {""}
-                Instragram
+                Instagram
               </p>
               <p>
                 <span>
@@ -154,7 +154,7 @@ const AuthorProfileCard = () => {
                 <MdOutlineReportProblem />
               </span>{" "}
               {""}
-              Report abouse
+              Report abuse
             </p>
           )}
         </div>

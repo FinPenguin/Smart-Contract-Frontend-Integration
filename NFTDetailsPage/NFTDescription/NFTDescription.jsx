@@ -111,10 +111,10 @@ const NFTDescription = () => {
             {social && (
               <div className={Style.NFTDescription_box_share_box_social}>
                 <a href="#">
-                  <TiSocialFacebook /> Facebooke
+                  <TiSocialFacebook /> Facebook
                 </a>
                 <a href="#">
-                  <TiSocialInstagram /> Instragram
+                  <TiSocialInstagram /> Instagram
                 </a>
                 <a href="#">
                   <TiSocialLinkedin /> LinkedIn

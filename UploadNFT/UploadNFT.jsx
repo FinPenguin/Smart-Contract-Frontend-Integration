@@ -10,9 +10,9 @@ import Style from "./Upload.module.css";
 import formStyle from "../AccountPage/Form/Form.module.css";
 import images from "../img";
 import { Button } from "../components/componentsindex.js";
-import { DropZone } from "../UploadNFT/uploadNFTIndex.js";
+import { DropZone } from "./uploadNFTIndex.js";
 
-const UloadNFT = () => {
+const UploadNFT = () => {
   const [active, setActive] = useState(0);
   const [itemName, setItemName] = useState("");
   const [website, setWebsite] = useState("");
@@ -70,7 +70,7 @@ const UloadNFT = () => {
           <label htmlFor="nft">Item Name</label>
           <input
             type="text"
-            placeholder="shoaib bhai"
+            placeholder="gaurang singh"
             className={formStyle.Form_box_input_userName}
             onChange={(e) => setItemName(e.target.value)}
           />
@@ -176,14 +176,14 @@ const UloadNFT = () => {
             </div>
           </div>
           <div className={formStyle.Form_box_input}>
-            <label htmlFor="Propertie">Propertie</label>
+            <label htmlFor="Properties">Properties</label>
             <div className={formStyle.Form_box_input_box}>
               <div className={formStyle.Form_box_input_box_icon}>
                 <AiTwotonePropertySafety />
               </div>
               <input
                 type="text"
-                placeholder="Propertie"
+                placeholder="Properties"
                 onChange={(e) => setProperties(e.target.value)}
               />
             </div>
@@ -207,4 +207,4 @@ const UloadNFT = () => {
   );
 };
 
-export default UloadNFT;
+export default UploadNFT;

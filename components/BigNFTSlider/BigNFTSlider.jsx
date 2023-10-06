@@ -5,19 +5,19 @@ import { MdVerified, MdTimer } from "react-icons/md";
 import { TbArrowBigLeftLines, TbArrowBigRightLine } from "react-icons/tb";
 
 //INTERNAL IMPORT
-import Style from "./BigNFTSilder.module.css";
+import Style from "./BigNFTSlider.module.css";
 import images from "../../img";
 import Button from "../Button/Button";
 
-const BigNFTSilder = () => {
+const BigNFTSlider = () => {
   const [idNumber, setIdNumber] = useState(0);
 
   const sliderData = [
     {
-      title: "Hello NFT",
+      title: "Creator NFT",
       id: 1,
-      name: "Daulat Hussain",
-      collection: "GYm",
+      name: "Gaurang Singh",
+      collection: "Home",
       price: "00664 ETH",
       like: 243,
       image: images.user1,
@@ -32,8 +32,8 @@ const BigNFTSilder = () => {
     {
       title: "Buddy NFT",
       id: 2,
-      name: "Shoaib Hussain",
-      collection: "Home",
+      name: "Vedant Dixit",
+      collection: "Gym",
       price: "0000004 ETH",
       like: 243,
       image: images.user2,
@@ -46,10 +46,10 @@ const BigNFTSilder = () => {
       },
     },
     {
-      title: "Gym NFT",
+      title: "Art NFT",
       id: 3,
-      name: "Raayan Hussain",
-      collection: "GYm",
+      name: "Keerthi Sharma",
+      collection: "Arts",
       price: "0000064 ETH",
       like: 243,
       image: images.user3,
@@ -62,10 +62,10 @@ const BigNFTSilder = () => {
       },
     },
     {
-      title: "Home NFT",
+      title: "Smart NFT",
       id: 4,
-      name: "Raayan Hussain",
-      collection: "GYm",
+      name: "Ananya Chenat",
+      collection: "Home",
       price: "4664 ETH",
       like: 243,
       image: images.user4,
@@ -214,4 +214,4 @@ const BigNFTSilder = () => {
   );
 };
 
-export default BigNFTSilder;
+export default BigNFTSlider;

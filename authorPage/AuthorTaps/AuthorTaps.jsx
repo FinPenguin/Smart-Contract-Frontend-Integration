@@ -81,7 +81,7 @@ const AuthorTaps = ({
               className={`${activeBtn == 1 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Collectiables
+              Collectables
             </button>
             <button
               className={`${activeBtn == 2 ? Style.active : ""}`}
