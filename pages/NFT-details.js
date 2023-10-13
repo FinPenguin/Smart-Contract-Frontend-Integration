@@ -9,7 +9,7 @@ import NFTDetailsPage from "../NFTDetailsPage/NFTDetailsPage";
 import { NFTMarketplaceContext } from "../Context/NFTMarketplaceContext";
 
 const NFTDetails = () => {
-  const { currentAccount } = useContext(NFTMarketplaceContext);
+  const { currentAccount, fetchNFTs } = useContext(NFTMarketplaceContext);
 
   const [nft, setNft] = useState({
     image: "",

@@ -15,18 +15,18 @@ const Discover = () => {
       name: "Search",
       link: "searchPage",
     },
-    {
-      name: "Author Profile",
-      link: "author",
-    },
-    {
-      name: "NFT Details",
-      link: "NFT-details",
-    },
-    {
-      name: "Account Setting",
-      link: "account",
-    },
+    // {
+    //   name: "Author Profile",
+    //   link: "author",
+    // },
+    // {
+    //   name: "NFT Details",
+    //   link: "NFT-details",
+    // },
+    // {
+    //   name: "Account Setting",
+    //   link: "account",
+    // },
     {
       name: "Upload NFT",
       link: "uploadNFT",
@@ -37,7 +37,7 @@ const Discover = () => {
     },
     {
       name: "Blog",
-      link: "blog",
+      link: "aboutus",
     },
   ];
   return (

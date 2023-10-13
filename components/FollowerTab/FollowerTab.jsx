@@ -50,60 +50,74 @@ const FollowerTab = ({ TopCreator }) => {
     {
       background: images.creatorbackground3,
       user: images.user3,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground4,
       user: images.user4,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground5,
       user: images.user5,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground6,
       user: images.user6,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground1,
       user: images.user1,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground2,
       user: images.user2,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
   ];
   const NewsArray = [
     {
       background: images.creatorbackground1,
       user: images.user1,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground2,
       user: images.user2,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground3,
       user: images.user3,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground4,
       user: images.user4,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground5,
       user: images.user5,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground6,
       user: images.user6,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground7,
       user: images.user7,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
     {
       background: images.creatorbackground8,
       user: images.user8,
+      seller: "0xjndjnfenjkf93i9njdfeihv03uohnj90ei",
     },
   ];
 

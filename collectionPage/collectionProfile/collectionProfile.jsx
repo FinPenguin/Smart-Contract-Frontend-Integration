@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useContext, useEffect } from "react";
 import Image from "next/image";
 import {
   TiSocialFacebook,
@@ -11,14 +11,30 @@ import {
 import Style from "./collectionProfile.module.css";
 import images from "../../img";
 
+//SMART CONTRACT IMPORT
+import { NFTMarketplaceContext } from "../../Context/NFTMarketplaceContext";
+
 const collectionProfile = () => {
+  const { fetchNFTs } = useContext(NFTMarketplaceContext);
+
+  const [nfts, setNfts] = useState([]);
+  const [nftsCopy, setNftsCopy] = useState([]);
+
+  useEffect(() => {
+    fetchNFTs().then((item) => {
+      setNfts(item.reverse());
+      setNftsCopy(item);
+    });
+  }, []);
+
   const cardArray = [1, 2, 3, 4];
   return (
     <div className={Style.collectionProfile}>
+      {/* {nfts.map((el) => ( */}
       <div className={Style.collectionProfile_box}>
         <div className={Style.collectionProfile_box_left}>
           <Image
-            src={images.nft_image_1}
+            src={images.nft_image_2}
             alt="nft image"
             width={800}
             height={800}
@@ -63,6 +79,7 @@ const collectionProfile = () => {
           </div>
         </div>
       </div>
+      {/* ))} */}
     </div>
   );
 };
