@@ -6,7 +6,7 @@ import { TiArrowSortedDown, TiArrowSortedUp, TiTick } from "react-icons/ti";
 import Style from "./AuthorTaps.module.css";
 
 const AuthorTaps = ({
-  setCollectiables,
+  setCollectables,
   setCreated,
   setLike,
   setFollower,
@@ -34,36 +34,36 @@ const AuthorTaps = ({
   const openTab = (e) => {
     const btnText = e.target.innerText;
     console.log(btnText);
-    if (btnText == "Collectiables") {
-      setCollectiables(true);
+    if (btnText == "Listed NFTs") {
+      setCollectables(true);
       setCreated(false);
       setFollower(false);
       setFollowing(false);
       setLike(false);
       setActiveBtn(1);
-    } else if (btnText == "Created") {
-      setCollectiables(false);
+    } else if (btnText == "Own NFT") {
+      setCollectables(false);
       setCreated(true);
       setFollower(false);
       setFollowing(false);
       setLike(false);
       setActiveBtn(2);
     } else if (btnText == "Liked") {
-      setCollectiables(false);
+      setCollectables(false);
       setCreated(false);
       setFollower(false);
       setFollowing(false);
       setLike(true);
       setActiveBtn(3);
     } else if (btnText == "Following") {
-      setCollectiables(false);
+      setCollectables(false);
       setCreated(false);
       setFollower(false);
       setFollowing(true);
       setLike(false);
       setActiveBtn(4);
     } else if (btnText == "Followers") {
-      setCollectiables(false);
+      setCollectables(false);
       setCreated(false);
       setFollower(true);
       setFollowing(false);
@@ -81,13 +81,13 @@ const AuthorTaps = ({
               className={`${activeBtn == 1 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Collectables
+              Listed NFTs
             </button>
             <button
               className={`${activeBtn == 2 ? Style.active : ""}`}
               onClick={(e) => openTab(e)}
             >
-              Created
+              Own NFT
             </button>
             <button
               className={`${activeBtn == 3 ? Style.active : ""}`}

@@ -9,8 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^1.0.1",
     "@openzeppelin/contracts": "^4.9.3",
     "axios": "^1.5.1",
+    "cors": "^2.8.5",
     "ethers": "5.7",
     "framer-motion": "^7.2.1",
     "ipfs-http-client": "^60.0.1",
@@ -23,7 +25,6 @@
     "web3modal": "^1.9.12"
   },
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "hardhat": "^2.17.4"
   }
 }

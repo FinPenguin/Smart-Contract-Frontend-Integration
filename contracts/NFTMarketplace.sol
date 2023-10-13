@@ -15,7 +15,7 @@ contract NFTMarketplace is ERC721URIStorage {
     Counters.Counter private _tokenIds;
     Counters.Counter private _itemsSold;
 
-    uint256 listingPrice = 0.0025 ether;
+    uint256 listingPrice = 0.025 ether;
 
     address payable owner;
 
@@ -37,32 +37,28 @@ contract NFTMarketplace is ERC721URIStorage {
         bool sold
     );
 
-    modifier onlyOwner() {
-        require(
-            msg.sender == owner,
-            "Only owner of the marketplacee can change the Listing Price"
-        );
-        _;
-    }
+    // modifier onlyOwner() {
+    //     require(
+    //         msg.sender == owner,
+    //         "Only owner of the marketplacee can change the Listing Price"
+    //     );
+    //     _;
+    // }
 
     constructor() ERC721("NFT Metaverse Token", "MYNFT") {
         owner == payable(msg.sender);
     }
 
-    function updateListingPrice(
-        uint256 _listingPrice
-    ) public payable onlyOwner {
+    function updateListingPrice(uint256 _listingPrice) public payable {
+        require(
+            owner == msg.sender,
+            "Only marketplace owner can update listing price."
+        );
         listingPrice = _listingPrice;
     }
 
     function fetchListingPrice() public view returns (uint256) {
         return listingPrice;
-    }
-
-    // TEST FUNCTION
-    function test() public pure returns (uint256) {
-        uint256 _test = 10;
-        return _test;
     }
 
     // Lets create "CREATE NFT TOKEN FUNCTION"
@@ -86,7 +82,7 @@ contract NFTMarketplace is ERC721URIStorage {
     // CREATING MARKET ITEM
 
     function createMarketItem(uint256 tokenId, uint256 price) private {
-        require(price > 0, "Price must atleast be 1");
+        require(price > 0, "Price must atleast be 1 wei");
         require(
             msg.value == listingPrice,
             "Price must be equal to listing price"
@@ -144,7 +140,7 @@ contract NFTMarketplace is ERC721URIStorage {
 
         idMarketItem[tokenId].owner = payable(msg.sender);
         idMarketItem[tokenId].sold = true;
-        idMarketItem[tokenId].owner = payable(address(0));
+        idMarketItem[tokenId].seller = payable(address(0));
 
         _itemsSold.increment();
 
