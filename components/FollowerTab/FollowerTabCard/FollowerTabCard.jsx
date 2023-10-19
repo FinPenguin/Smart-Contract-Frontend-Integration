@@ -55,7 +55,7 @@ const FollowerTabCard = ({ i, el }) => {
                 <MdVerified />
               </span>
             </h4>
-            <p>{el.total || 0} ETH</p>
+            <p>{el.total.toString().slice(0, 9) || 0} ETH</p>
           </div>
 
           <div className={Style.FollowerTabCard_box_info_following}>

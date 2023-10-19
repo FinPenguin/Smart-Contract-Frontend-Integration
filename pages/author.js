@@ -21,31 +21,37 @@ const author = () => {
       background: images.creatorbackground1,
       user: images.user1,
       seller: "0xbd383ehudhhdh938988whffef9",
+      total: 10,
     },
     {
       background: images.creatorbackground2,
       user: images.user2,
       seller: "0xbd383ehudhhdh938988whffef9",
+      total: 10,
     },
     {
       background: images.creatorbackground3,
       user: images.user3,
       seller: "0xbd383ehudhhdh938988whffef9",
+      total: 10,
     },
     {
       background: images.creatorbackground4,
       user: images.user4,
       seller: "0xbd383ehudhhdh938988whffef9",
+      total: 10,
     },
     {
       background: images.creatorbackground5,
       user: images.user5,
       seller: "0xbd383ehudhhdh938988whffef9",
+      total: 10,
     },
     {
       background: images.creatorbackground6,
       user: images.user6,
       seller: "0xbd383ehudhhdh938988whffef9",
+      total: 10,
     },
   ];
 

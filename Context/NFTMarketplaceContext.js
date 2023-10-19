@@ -176,7 +176,9 @@ export const NFTMarketplaceProvider = ({ children }) => {
   //--------FETCH NFTS FUNCTION
   const fetchNFTs = async () => {
     try {
-      const provider = new ethers.providers.JsonRpcProvider();
+      const provider = new ethers.providers.JsonRpcProvider(
+        "https://polygon-mumbai.g.alchemy.com/v2/Jd-14noFCTcppkndVAtnQ0ZKTYvhrhtm"
+      );
       const contract = fetchContract(provider);
 
       // const web3Modal = new Web3Modal();
