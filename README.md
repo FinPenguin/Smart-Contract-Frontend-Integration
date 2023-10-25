@@ -1,4 +1,4 @@
-# Sample Hardhat Project
+# NFT - Marketplace
 
 This project demonstrates a complete NFT Marketplace. It comes with a complete Frontend including a Backend connectivity support. It has a smart contract which implements all the functions of an NFT Marketplace. It only has support for ERC721 Tokens as of now.
 

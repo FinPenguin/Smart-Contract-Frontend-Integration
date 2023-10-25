@@ -60,7 +60,7 @@ const contactus = () => {
                 <label htmlFor="name">Full Name</label>
                 <input
                   type="text"
-                  placeholder="shoaib bhai"
+                  placeholder="Name"
                   className={formStyle.Form_box_input_userName}
                 />
               </div>

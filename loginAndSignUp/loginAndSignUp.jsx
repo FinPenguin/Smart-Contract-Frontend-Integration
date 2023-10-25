@@ -10,10 +10,10 @@ const loginAndSignUp = () => {
   const [activeBtn, setActiveBtn] = useState(1);
 
   const socialImage = [
-    {
-      social: images.facebook,
-      name: "Continue with Facebook",
-    },
+    // {
+    //   social: images.instagram,
+    //   name: "Continue with Instagram",
+    // },
     {
       social: images.twitter,
       name: "Continue with twitter",
